@@ -1,0 +1,139 @@
+body {
+    background-color: #efefef;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 20px;
+}
+
+/*ヘッダー部分*/
+.container {
+    width: 920px;
+    margin: 0 auto 48px auto;
+}
+
+/*2カラム用．左右920pxまで*/
+.left-contents {
+    width: 600px;
+    margin-right: 20px;
+    float: left;
+}
+.right-contents {
+    width: 300px;
+    float: left;
+}
+
+.header-title-area {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.text-sub {
+    color: #777777;
+}
+
+.header-navigation {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-navigation::after {
+    clear: both; /* 被るものがあったら、下に退かす */
+    display: block;
+    content: "";
+}
+
+.header-navigation li {
+    float: left;
+    padding: 0 30px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.header-navigation li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+
+/*content部分*/
+.text-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card-contents {
+    padding: 40px;
+    display: block;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+
+/*インフォリスト*/
+.info-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+}
+
+/*スタッフ欄*/
+.staff-list-area::after {
+    clear: both;
+    display: block;
+    content: " ";
+}
+.staff-list {
+    width: 150px;
+    margin-right: 35px;
+    float: left;
+}
+.staff-list:last-child {
+    margin-right: 0;
+}
+.staff-image {
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    object-fit: cover; /*縦横比維持用*/
+}
+.top-focus {
+    object-position: 100% 0 /*フォーカス位置の変更(上部フォーカス)*/
+}
+
+.staff-name {
+    text-align: center;
+}
+/*スタッフ欄*/
+
+/*フッター*/
+.copyright {
+    color: #777;
+    text-align: center;
+}
+.main:after { /*右カラムに突っ込まれるのを解除*/
+    clear: both;
+    display: block;
+    content: " ";
+}
+/*フッター*/
